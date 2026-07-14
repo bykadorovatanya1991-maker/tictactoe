@@ -15,8 +15,8 @@ body {
 .game-box {
   width: fit-content;
   padding: 30px;
+  border: 5px solid #2a2e3c;
  
-
   background-color: #474d64;
   border-radius: 24px;
 
@@ -95,4 +95,16 @@ body {
 #currentPlayer {
   font-size: 24px;
   font-weight: bold;
+}
+.board-box {
+    background: #686e84;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    margin: 30px 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.18);
+
+    display: inline-block;
 }
