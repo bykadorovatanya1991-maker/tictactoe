@@ -2,46 +2,46 @@
 <html lang ="de">
 <head >
 <meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
 
 <meta
 name="viewport"
 content="width=device-width, initial-scale=1.0">
 </head>
 <body>
- 
-<p>
-<button id="meinButton1" onclick="myFunc(this)"> 
-  </button>
-<button id="meinButton2" onclick="myFunc(this)"> 
-  </button>
-<button id="meinButton3" onclick="myFunc(this)"> 
-  </button> 
-  </p>
 
-<p>
-<button id="meinButton4" onclick="myFunc(this)"> 
-  </button>
-<button id="meinButton5" onclick="myFunc(this)"> 
-  </button>
-<button id="meinButton6" onclick="myFunc(this)"> 
-  </button>
-  </p>
+  <div class="game-box">
+    <h1>Tic-Tac-Toe</h1>
 
+    <p class="turn-text">
+      Jetzt spielt: <span id="currentPlayer">X</span>
+    </p>
+    <p id="winnerMessage" class="winner-message"></p>
 
-<p>
-<button id="meinButton7" onclick="myFunc(this)"> 
-  </button>
-<button id="meinButton8" onclick="myFunc(this)"> 
-  </button>
-<button id="meinButton9" onclick="myFunc(this)"> 
-  </button>
-  </p>
+    <div class="playfield">
+      <button id="meinButton1" onclick="myFunc(this)"></button>
+      <button id="meinButton2" onclick="myFunc(this)"></button>
+      <button id="meinButton3" onclick="myFunc(this)"></button>
 
-<button id="restartButton" onclick="restartGame()" style="display: none;">
-  noch mal spielen
-</button>
- 
+      <button id="meinButton4" onclick="myFunc(this)"></button>
+      <button id="meinButton5" onclick="myFunc(this)"></button>
+      <button id="meinButton6" onclick="myFunc(this)"></button>
 
-<script src="index.js"></script>
-</body> 
+     <button id="meinButton7" onclick="myFunc(this)"></button>
+      <button id="meinButton8" onclick="myFunc(this)"></button>
+      <button id="meinButton9" onclick="myFunc(this)"></button>
+    </div>
+
+    <button
+      id="restartButton"
+      class="restart-button"
+      onclick="restartGame()"
+      style="display: none;"
+    >
+      Neu starten
+    </button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
 </html>
